@@ -135,16 +135,6 @@ body {
 .hero-headline-center * {
   pointer-events: auto;
 }
-.fade-up-init {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 600ms ease, transform 600ms ease;
-}
-
-.fade-up-init {
-  opacity: 1;
-  transform: none;
-}
 
 @keyframes bounce {
   0%,
