@@ -1,11 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Team Pagpag</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Serif:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body-black">
+    <!-- navbar -->
+    <nav class="nav-fixed">
+      <div class="nav-container">
+        <div class="nav-logo-container">
+          <span class="nav-logo"> Chikin </span>
+        </div>
+        <ul class="nav-menu">
+          <li>
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">Causes</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">Health Risks</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">Stories</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">Solutions</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">References</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">About</a>
+          </li>
+        </ul>
+        <div>
+          <a href="#" class="nav-btn"> Nav Button </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Section 1 || hero section -->
+    <section class="hero-section">
+      <div class="hero-container">
+        <img
+          src="/assets/images/hero-1.png"
+          class="carousel-img"
+          alt="Runner"
+          loading="lazy"
+        />
+        <img
+          src="/assets/images/hero-2.jpg"
+          class="carousel-img"
+          alt="Flower"
+          loading="lazy"
+        />
+        <img
+          src="/assets/images/hero-3.png"
+          class="carousel-img"
+          alt="Mountains"
+          loading="lazy"
+        />
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-headline-center">
+          <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+            Pagpag Food
+          </h1>
+          <div
+            class="hero-subtitle-container"
+            data-aos="fade-up"
+            data-aos-delay="250"
+          >
+            <p class="hero-subtitle">The Real Junk Food of Manila</p>
+            <p class="hero-subtitle hero-subtitle-last">
+              A Survival Meal or a Silent Danger?
+            </p>
+          </div>
+          <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+            <a href="#" class="hero-btn-primary"> Button 1 </a>
+            <a href="#" class="hero-btn-secondary"> Button 2 </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section id="what-is-pagpag" class="section-2">
+      <div class="main-content-container">
+        <div class="fade-up-init content-label">
+          1 • Definition & Background
+        </div>
+        <h2 class="fade-up-init content-title">What is Pagpag?</h2>
+        <p class="fade-up-init content-description">
+          Pagpag is a type of upcycled food commonly consumed by some urban-poor
+          communities in the Philippines as a desperate response to hunger and
+          food insecurity. The practice involves scavenging for leftover or
+          discarded meat, often sourced from fast-food restaurants, garbage
+          bins, or dumpsites, which would normally be considered waste. These
+          scraps are collected, sorted to remove visibly spoiled parts, washed,
+          and then re-cooked before being sold as a very cheap meal to families
+          who cannot afford fresh food. The term “pagpag” literally means to
+          “shake off” or “brush off” dirt, symbolizing the process of cleaning
+          and salvaging edible portions from discarded food. For many struggling
+          households, pagpag becomes not just a meal but a means of survival,
+          offering a low-cost source of calories despite the significant health
+          risks it carries.
+        </p>
+      </div>
+      <div class="fade-up-init info-cards-grid">
+        <div class="info-card">
+          <div class="info-card-title">Origins</div>
+          <div class="info-card-text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus
+            animi repudiandae veritatis tempore quas, fugit asperiores ipsam hic
+            deserunt voluptate quod inventore deleniti quis magni cupiditate non
+            magnam odio repellat.
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-card-title">Who Relies On It?</div>
+          <div class="info-card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            minus illo nisi repellat cumque ullam recusandae architecto, nostrum
+            obcaecati cum, aliquam et blanditiis beatae dicta? Perspiciatis
+            ratione sapiente labore dolores?
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-card-title">Common Items</div>
+          <div class="info-card-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            quasi sunt odit consequuntur dolor alias dignissimos non culpa
+            quidem odio officia recusandae consectetur suscipit necessitatibus
+            rerum, similique quod a sapiente?
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section id="content-visuals" class="section-3">
+      <div class="main-content-container">
+        <div class="fade-up-init content-label">2 • Process Overview</div>
+        <h2 class="fade-up-init content-title">The Pagpag Process</h2>
+      </div>
+
+      <div class="fade-up-init">
+        <div class="image-slider">
+          <input id="s3-1" type="radio" name="s3" checked />
+          <input id="s3-2" type="radio" name="s3" />
+          <input id="s3-3" type="radio" name="s3" />
+
+          <div class="slides">
+            <div class="slide">
+              <img
+                class="img-responsive"
+                src="/assets/images/hero-1.png"
+                alt="Slide 1"
+                loading="lazy"
+              />
+              <div class="slide-caption">
+                <div class="slide-index">01<span class="total">/03</span></div>
+                <h3 class="slide-title">Introduction</h3>
+              </div>
+            </div>
+            <div class="slide">
+              <img
+                class="img-responsive"
+                src="/assets/images/hero-2.jpg"
+                alt="Slide 2"
+                loading="lazy"
+              />
+              <div class="slide-caption">
+                <div class="slide-index">02<span class="total">/03</span></div>
+                <h3 class="slide-title">Collection & Washing</h3>
+              </div>
+            </div>
+            <div class="slide">
+              <img
+                class="img-responsive"
+                src="/assets/images/hero-3.png"
+                alt="Slide 3"
+                loading="lazy"
+              />
+              <div class="slide-caption">
+                <div class="slide-index">03<span class="total">/03</span></div>
+                <h3 class="slide-title">Re-cooking & Selling</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-dots">
+            <label for="s3-1" class="dot" aria-label="Slide 1"></label>
+            <label for="s3-2" class="dot" aria-label="Slide 2"></label>
+            <label for="s3-3" class="dot" aria-label="Slide 3"></label>
+          </div>
+
+          <div class="slider-arrows">
+            <label class="arrow prev prev-1" for="s3-3">‹ Previous</label>
+            <label class="arrow next next-1" for="s3-2">Next ›</label>
+            <label class="arrow prev prev-2" for="s3-1">‹ Previous</label>
+            <label class="arrow next next-2" for="s3-3">Next ›</label>
+            <label class="arrow prev prev-3" for="s3-2">‹ Previous</label>
+            <label class="arrow next next-3" for="s3-1">Next ›</label>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="fade-up-init flow-diagram"
+        aria-label="Food chain from garbage to selling"
+      >
+        <div class="flow-item">Garbage Bin</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-item">Collection</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-item">Sorting & Washing</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-item">Re-cooking</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-item">Selling</div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({ once: true, duration: 100, easing: "ease-out" });
+    </script>
+  </body>
 </html>
