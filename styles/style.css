@@ -1,8 +1,20 @@
 /* ===== Global & Base Styles ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
   font-family: "League Spartan", sans-serif;
   overflow-x: hidden;
-  background: #09090b;
+  /* global shadr gradient */
+  background: radial-gradient(
+      1200px 220px at 50% 0px,
+      rgba(255, 255, 255, 0.02) 0%,
+      rgba(255, 255, 255, 0) 60%
+    ),
+    #09090b;
+  background-attachment: fixed, fixed;
 }
 html,
 body {
@@ -371,25 +383,37 @@ body {
 /* ===== Section 2 Styles ===== */
 .section-2 {
   position: relative;
-  width: 100%;
+  min-height: 100vh;
   background-color: #09090b;
+  background-image: radial-gradient(
+      1200px 220px at 50% 0px,
+      rgba(255, 255, 255, 0.03) 0%,
+      rgba(255, 255, 255, 0) 60%
+    ),
+    linear-gradient(180deg, #0b0b0d 0%, #09090b 100%);
+  background-blend-mode: screen, normal;
   padding-top: 96px;
   padding-bottom: 96px;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 
 .main-content-container {
   max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 48px;
+}
+
+@media (min-width: 640px) {
+  .main-content-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 .content-label {
@@ -579,7 +603,15 @@ body {
 .section-3 {
   position: relative;
   width: 100%;
+  min-height: 100vh;
   background-color: #09090b;
+  background-image: radial-gradient(
+      1200px 220px at 50% 0px,
+      rgba(255, 255, 255, 0.03) 0%,
+      rgba(255, 255, 255, 0) 60%
+    ),
+    linear-gradient(180deg, #0b0b0d 0%, #09090b 100%);
+  background-blend-mode: screen, normal;
   padding-top: 96px;
   padding-bottom: 96px;
   padding-left: 16px;
@@ -807,5 +839,374 @@ body {
 /* ===== End of Section 3 Styles ===== */
 
 /* ===== Section 4 Styles ===== */
-/* TODO: */
+.section-4 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #09090b;
+  background-image: radial-gradient(
+      1200px 220px at 50% 0px,
+      rgba(255, 255, 255, 0.018) 0%,
+      rgba(255, 255, 255, 0) 60%
+    ),
+    linear-gradient(180deg, #0b0b0e 0%, #09090b 100%);
+  background-blend-mode: screen, normal;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
 /* ===== End of Section 4 Styles ===== */
+
+/* ===== Section 5 Styles ===== */
+.section-5 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #09090b;
+  background-image: radial-gradient(
+      1200px 220px at 50% 0px,
+      rgba(255, 255, 255, 0.016) 0%,
+      rgba(255, 255, 255, 0) 60%
+    ),
+    linear-gradient(180deg, #0a0a0d 0%, #09090b 100%);
+  background-blend-mode: screen, normal;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.section-5 .risk-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 16px auto 0;
+}
+
+@media (min-width: 900px) {
+  .section-5 .risk-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+  }
+  .section-5 .risk-quote {
+    grid-column: 1 / -1;
+  }
+}
+
+.section-5 .risk-card {
+  background: #0b0b0d;
+  border: 1px solid #27272a;
+  border-radius: 12px;
+  padding: 18px 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+}
+
+.section-5 .risk-title {
+  color: #fff;
+  font-size: 20px;
+  margin: 0 0 8px 0;
+  font-weight: 400;
+}
+
+.section-5 .risk-text {
+  color: #d4d4d8;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.section-5 .risk-quote {
+  background: #0b0b0d;
+  border: 1px solid #27272a;
+  border-left: 4px solid #3b82f6;
+  color: #d4d4d8;
+  border-radius: 10px;
+  padding: 16px 18px;
+  font-style: italic;
+}
+
+.section-5 .cta-row {
+  margin-top: 24px;
+}
+/* ===== End of Section 5 Styles ===== */
+
+/* ===== Section 6 Styles ===== */
+.section-6 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #09090b;
+  background-image: radial-gradient(
+      1200px 220px at 50% 0px,
+      rgba(255, 255, 255, 0.014) 0%,
+      rgba(255, 255, 255, 0) 60%
+    ),
+    linear-gradient(180deg, #0a0a0c 0%, #09090b 100%);
+  background-blend-mode: screen, normal;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.section-6 .stories-carousel {
+  width: 100%;
+  max-width: 980px;
+  margin: 12px auto 0;
+}
+
+.section-6 .stories-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-bottom: 6px;
+}
+.section-6 .stories-track::-webkit-scrollbar {
+  height: 6px;
+}
+.section-6 .stories-track::-webkit-scrollbar-thumb {
+  background: #2a2a2e;
+  border-radius: 9999px;
+}
+.section-6 .stories-track::-webkit-scrollbar-track {
+  background: #141416;
+}
+
+.section-6 .story-card {
+  scroll-snap-align: center;
+  background: #0b0b0d;
+  border: 1px solid #27272a;
+  border-radius: 14px;
+  padding: 20px 22px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section-6 .story-title {
+  color: #fff;
+  font-size: 20px;
+  margin: 0 0 8px 0;
+  font-weight: 400;
+}
+.section-6 .story-text {
+  color: #d4d4d8;
+  line-height: 1.7;
+  margin: 0 0 10px 0;
+}
+.section-6 .story-meta {
+  color: #a1a1aa;
+  font-size: 14px;
+}
+
+.section-6 .stories-dots {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 12px;
+}
+.section-6 .stories-dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  background: #ffffff2b;
+  border: 1px solid #ffffff40;
+}
+
+/* ===== End of Section 6 Styles ===== */
+
+/* ===== Section 7 Styles ===== */
+.section-7 {
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  background-color: #09090b;
+  background-image: radial-gradient(
+      1200px 220px at 50% 0px,
+      rgba(255, 255, 255, 0.012) 0%,
+      rgba(255, 255, 255, 0) 60%
+    ),
+    linear-gradient(180deg, #0a0a0c 0%, #09090b 100%);
+  background-blend-mode: screen, normal;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+@media (max-width: 700px) {
+  .section-7 {
+    min-height: auto;
+    padding-top: 72px;
+    padding-bottom: 80px;
+  }
+}
+
+.section-7 .solutions-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto 8px;
+}
+
+@media (min-width: 700px) {
+  .section-7 .solutions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1000px) {
+  .section-7 .solutions-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.section-7 .solution-card {
+  background: #0b0b0d;
+  border: 1px solid #27272a;
+  border-radius: 12px;
+  padding: 18px 16px;
+  text-align: center;
+}
+.section-7 .solution-icon {
+  font-size: 34px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.section-7 .solution-title {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 6px;
+  font-weight: 400;
+}
+.section-7 .solution-text {
+  color: #d4d4d8;
+  line-height: 1.6;
+}
+/* ===== End of Section 7 Styles ===== */
+
+/* ===== Footer Styles ===== */
+.footer {
+  background: #0a0a0c;
+  border-top: 1px solid #27272a;
+  padding: 48px 0 24px;
+  margin-top: 48px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 900px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.footer-left {
+  max-width: 520px;
+}
+
+.footer-right {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 600px) {
+  .footer-right {
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+  }
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  font-family: "League Spartan", sans-serif;
+}
+
+.footer-subtitle {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 16px 0;
+  font-family: "League Spartan", sans-serif;
+}
+
+.footer-description {
+  color: #d4d4d8;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 14px;
+  max-width: 350px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-link {
+  color: #a1a1aa;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #27272a;
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+}
+
+.footer-copyright p,
+.footer-disclaimer p {
+  color: #71717a;
+  font-size: 12px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.footer-disclaimer p {
+  font-style: italic;
+}
+/* ===== End of Footer Styles ===== */
