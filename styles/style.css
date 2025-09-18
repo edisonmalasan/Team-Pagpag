@@ -836,6 +836,113 @@ body {
   }
 }
 
+/* Poverty Statistics Chart Styles */
+.poverty-stats-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .poverty-stats-container {
+    grid-template-columns: 2fr 1fr;
+    gap: 60px;
+  }
+}
+
+.stats-chart {
+  background: #0b0b0d;
+  border: 1px solid #27272a;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.chart-title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.chart-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.bar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bar-label {
+  color: #d4d4d8;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.bar-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.bar {
+  height: 24px;
+  border-radius: 4px;
+  transition: width 0.8s ease;
+  position: relative;
+  min-width: 20px;
+}
+
+.bar-value {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  min-width: 40px;
+  text-align: right;
+}
+
+.stats-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 20px;
+  background: #0b0b0d;
+  border: 1px solid #27272a;
+  border-radius: 12px;
+}
+
+.stat-number {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.stat-label {
+  color: #a1a1aa;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.cta-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
 /* ===== End of Section 3 Styles ===== */
 
 /* ===== Section 4 Styles ===== */
