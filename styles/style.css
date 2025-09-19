@@ -943,6 +943,20 @@ body {
   margin-top: 32px;
 }
 
+/* ==== Statistics Page Styles ==== */
+.stats-list {
+  color: #d4d4d8;
+}
+
+.stats-list a {
+  color: #d4d4d8;
+  text-decoration: none;
+}
+.stats-list a:hover {
+  text-decoration: underline;
+}
+/* ==== End of Statistics Page Styles ==== */
+
 /* ===== End of Section 3 Styles ===== */
 
 /* ===== Section 4 Styles ===== */
