@@ -1331,3 +1331,12 @@ body {
   font-style: italic;
 }
 /* ===== End of Footer Styles ===== */
+
+/* about section */
+.profile-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
