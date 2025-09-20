@@ -20,7 +20,7 @@
     <nav class="nav-fixed">
       <div class="nav-container">
         <div class="nav-logo-container">
-          <a href="../index.html" class="nav-logo">Uplift</a>
+          <a href="./index.html" class="nav-logo">Uplift</a>
         </div>
         
         <div class="nav-hamburger" id="nav-hamburger">
@@ -30,11 +30,11 @@
         </div>
         
         <ul class="nav-menu" id="nav-menu">
-          <li><a href="../index.html" class="nav-link">Home</a></li>
-          <li><a href="./about.html" class="nav-link">About</a></li>
-          <li><a href="./statistics.html" class="nav-link active">Statistics</a></li>
-          <li><a href="./news.html" class="nav-link">News</a></li>
-          <li><a href="./advocacy.html" class="nav-link">Advocacy</a></li>
+          <li><a href="./index.html" class="nav-link active">Home</a></li>
+          <li><a href="./pages/about.html" class="nav-link">About</a></li>
+          <li><a href="./pages/statistics.html" class="nav-link">Statistics</a></li>
+          <li><a href="./pages/news.html" class="nav-link">News</a></li>
+          <li><a href="./pages/advocacy.html" class="nav-link">Advocacy</a></li>
           <li><a href="#" class="nav-btn">Donations</a></li>
         </ul>
         
@@ -327,75 +327,6 @@
       </div>
     </section>
 
-    <!-- Section 6
-    <section id="stories" class="section-6">
-      <div class="main-content-container">
-        <div class="content-label">Real Stories</div>
-        <h2 class="content-title">Voices from Around the World</h2>
-
-        <div class="stories-carousel">
-          <div class="stories-track" id="stories-track">
-            <article class="story-card" id="story-1">
-              <h3 class="story-title">"Education is our only way out."</h3>
-              <p class="story-text">
-                "My parents work three jobs each, but we still struggle. I study
-                hard because I know education is the only way I can help my
-                family escape poverty."
-              </p>
-              <div class="story-meta">
-                Maria — Kenya ·
-                <a class="link-inline" href="#" target="_blank" rel="noopener"
-                  >Uplift Stories, 2024</a
-                >
-              </div>
-            </article>
-
-            <article class="story-card" id="story-2">
-              <h3 class="story-title">"We help each other survive."</h3>
-              <p class="story-text">
-                "In our community, we share what little we have. When one family
-                has food, we all eat. When someone gets sick, we all help pay
-                for medicine."
-              </p>
-              <div class="story-meta">
-                Ahmed — Bangladesh ·
-                <a class="link-inline" href="#" target="_blank" rel="noopener"
-                  >Uplift Stories, 2024</a
-                >
-              </div>
-            </article>
-
-            <article class="story-card" id="story-3">
-              <h3 class="story-title">"Hope keeps us going."</h3>
-              <p class="story-text">
-                "Every day is a struggle, but we never give up hope. We believe
-                that with hard work and support from others, we can build a
-                better future for our children."
-              </p>
-              <div class="story-meta">
-                Rosa — Guatemala ·
-                <a class="link-inline" href="#" target="_blank" rel="noopener"
-                  >Uplift Stories, 2024</a
-                >
-              </div>
-            </article>
-          </div>
-
-          <div class="stories-dots">
-            <a href="#story-1" class="dot" aria-label="Story 1"></a>
-            <a href="#story-2" class="dot" aria-label="Story 2"></a>
-            <a href="#story-3" class="dot" aria-label="Story 3"></a>
-          </div>
-        </div>
-
-        <div class="cta-row">
-          <a href="./pages/stories.html" class="content-btn"
-            >Read More Stories</a
-          >
-        </div>
-      </div>
-    </section> -->
-
     <!-- Section 7 -->
     <section id="solutions" class="section-7">
       <div class="main-content-container">
@@ -464,16 +395,16 @@
             <div class="footer-section">
               <h4 class="footer-subtitle">Quick Links</h4>
               <ul class="footer-links">
-                <li><a href="#" class="footer-link">Home</a></li>
-                <li><a href="#what-is-uplift" class="footer-link">About</a></li>
+                <li><a href="./index.html" class="footer-link">Home</a></li>
+                <li><a href="./pages/about.html" class="footer-link">About</a></li>
                 <li>
-                  <a href="#statistics" class="footer-link">Statistics</a>
+                  <a href="./pages/statistics.html" class="footer-link">Statistics</a>
                 </li>
                 <li>
                   <a href="./pages/news.html" class="footer-link">News</a>
                 </li>
                 <li>
-                  <a href="./pages/get-involved.html" class="footer-link"
+                  <a href="./pages/advocacy.html" class="footer-link"
                     >Advocacy</a
                   >
                 </li>
@@ -524,6 +455,8 @@
 
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
+      AOS.init({ once: true, duration: 800, easing: "ease-out" });
+
       // Mobile Navigation Hamburger Menu
       const hamburger = document.getElementById('nav-hamburger');
       const navMenu = document.getElementById('nav-menu');
