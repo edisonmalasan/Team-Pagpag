@@ -1798,3 +1798,82 @@ body.menu-open {
     display: none !important;
   }
 }
+
+/* Advocacy Hero Section with Community/Action Background */
+.advocacy-hero-section {
+  background-image: linear-gradient(
+      rgba(9, 9, 11, 0.75),
+      rgba(9, 9, 11, 0.85)
+    ),
+    url('../assets/images/advocacy-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  .advocacy-hero-section {
+    background-attachment: scroll; /* Better performance on mobile */
+    background-size: cover;
+    background-position: center top;
+    min-height: 50vh;
+  }
+  
+  .advocacy-hero-section .hero-title {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+  
+  .advocacy-hero-section .hero-subtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .advocacy-hero-section .hero-subtitle-container {
+    margin-bottom: 20px;
+  }
+}
+
+/* Tablet Optimizations */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .advocacy-hero-section {
+    background-attachment: scroll;
+    background-position: center center;
+    min-height: 55vh;
+  }
+}
+
+/* Desktop Optimizations */
+@media (min-width: 1025px) {
+  .advocacy-hero-section {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 60vh;
+  }
+  
+  .advocacy-hero-section .hero-title {
+    font-size: 60px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  }
+  
+  .advocacy-hero-section .hero-subtitle {
+    font-size: 24px;
+    line-height: 32px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  }
+}
+
+/* Large Desktop Optimizations */
+@media (min-width: 1440px) {
+  .advocacy-hero-section {
+    min-height: 70vh;
+    background-size: cover;
+  }
+  
+  .advocacy-hero-section .hero-title {
+    font-size: 72px;
+  }
+}
