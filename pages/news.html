@@ -1,9 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+<head>
+  <meta charset="UTF-8" />
+  <title>Latest News | Team Uplift</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="stylesheet" href="../styles/news.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Serif:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body class="body-black">
+  <!-- Navbar -->
+  <nav class="nav-fixed">
+    <div class="nav-container">
+      <div class="nav-logo-container">
+        <a href="../index.html" class="nav-logo">Uplift</a>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="./about.html" class="nav-link">About</a></li>
+        <li><a href="./statistics.html" class="nav-link">Statistics</a></li>
+        <li><a href="./news.html" class="nav-link active">News</a></li>
+        <li><a href="./advocacy.html" class="nav-link">Advocacy</a></li>
+      </ul>
+      <div>
+        <a href="#" class="nav-btn">Donations</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- News Header Section -->
+  <section class="section-2" style="padding-top: 120px">
+    <div class="main-content-container">
+      <div class="content-label" data-aos="fade-up">Latest Updates</div>
+      <h1 class="content-title" data-aos="fade-up" data-aos-delay="100">
+        News & Insights
+      </h1>
+      <p
+        class="content-description"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        style="max-width: 820px; margin: 0 auto"
+      >
+        Stay informed about the latest developments in global poverty reduction,
+        policy changes, success stories, and research findings. Our curated news
+        helps you understand the evolving landscape of poverty alleviation efforts
+        worldwide.
+      </p>
+    </div>
+  </section>
+
+  <!-- Featured News Section -->
+  <section class="section-3" style="padding-top: 48px">
+    <div class="main-content-container">
+      <div class="content-label">Featured Story</div>
+      <h2 class="content-title">Breaking: Global Poverty Rates Show Mixed Progress</h2>
+      
+      <div class="featured-news-card" data-aos="fade-up">
+        <div class="news-image">
+          <img src="../assets/images/news-featured.jpg" alt="Global poverty statistics" class="img-responsive" />
+        </div>
+        <div class="news-content">
+          <div class="news-date">September 18, 2025</div>
+          <h3 class="news-title">World Bank Reports Uneven Progress in Global Poverty Reduction</h3>
+          <p class="news-excerpt">
+            The latest World Bank report reveals that while overall global poverty rates continue
+            to decline, progress has been significantly slower in Sub-Saharan Africa and conflict-affected
+            regions. The report emphasizes the need for targeted interventions and increased
+            international cooperation to address persistent poverty challenges.
+          </p>
+          <div class="news-meta">
+            <span class="news-source">World Bank Report</span>
+            <span class="news-category">Global Statistics</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent News Grid -->
+  <section class="section-4" style="padding-top: 48px">
+    <div class="main-content-container">
+      <div class="content-label">Recent Updates</div>
+      <h2 class="content-title">Latest News</h2>
+      
+      <div class="news-grid">
+        <article class="news-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="news-card-header">
+            <div class="news-date">September 15, 2025</div>
+            <div class="news-category">Education</div>
+          </div>
+          <h3 class="news-card-title">UNESCO Launches New Education Initiative in Rural Areas</h3>
+          <p class="news-card-excerpt">
+            A comprehensive program aims to improve educational access for children
+            in remote communities across 15 countries, focusing on digital learning
+            solutions and teacher training.
+          </p>
+          <div class="news-card-footer">
+            <span class="news-source">UNESCO</span>
+            <a href="#" class="news-link">Read More</a>
+          </div>
+        </article>
+
+        <article class="news-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="news-card-header">
+            <div class="news-date">September 12, 2025</div>
+            <div class="news-category">Healthcare</div>
+          </div>
+          <h3 class="news-card-title">Mobile Health Clinics Reach Remote Communities</h3>
+          <p class="news-card-excerpt">
+            Innovative mobile healthcare units are providing essential medical services
+            to underserved populations, reducing healthcare disparities in rural
+            and hard-to-reach areas.
+          </p>
+          <div class="news-card-footer">
+            <span class="news-source">WHO</span>
+            <a href="#" class="news-link">Read More</a>
+          </div>
+        </article>
+
+        <article class="news-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="news-card-header">
+            <div class="news-date">September 10, 2025</div>
+            <div class="news-category">Economic Development</div>
+          </div>
+          <h3 class="news-card-title">Microfinance Programs Show Promising Results</h3>
+          <p class="news-card-excerpt">
+            Recent studies indicate that microfinance initiatives have helped over
+            2 million families start small businesses, creating sustainable income
+            sources in developing regions.
+          </p>
+          <div class="news-card-footer">
+            <span class="news-source">Development Finance Journal</span>
+            <a href="#" class="news-link">Read More</a>
+          </div>
+        </article>
+
+        <article class="news-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="news-card-header">
+            <div class="news-date">September 8, 2025</div>
+            <div class="news-category">Climate & Poverty</div>
+          </div>
+          <h3 class="news-card-title">Climate Change Threatens Poverty Reduction Goals</h3>
+          <p class="news-card-excerpt">
+            A new UN report warns that climate-related disasters could push an
+            additional 130 million people into poverty by 2030 without immediate
+            adaptation measures.
+          </p>
+          <div class="news-card-footer">
+            <span class="news-source">UN Climate Report</span>
+            <a href="#" class="news-link">Read More</a>
+          </div>
+        </article>
+
+        <article class="news-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="news-card-header">
+            <div class="news-date">September 5, 2025</div>
+            <div class="news-category">Success Stories</div>
+          </div>
+          <h3 class="news-card-title">Bangladesh Achieves Significant Poverty Reduction</h3>
+          <p class="news-card-excerpt">
+            Bangladesh's focused approach to rural development and women's empowerment
+            has resulted in a 40% reduction in extreme poverty over the past decade.
+          </p>
+          <div class="news-card-footer">
+            <span class="news-source">Asian Development Bank</span>
+            <a href="#" class="news-link">Read More</a>
+          </div>
+        </article>
+
+        <article class="news-card" data-aos="fade-up" data-aos-delay="600">
+          <div class="news-card-header">
+            <div class="news-date">September 3, 2025</div>
+            <div class="news-category">Technology</div>
+          </div>
+          <h3 class="news-card-title">Digital Payment Systems Transform Rural Banking</h3>
+          <p class="news-card-excerpt">
+            Mobile banking solutions are revolutionizing financial access for
+            the unbanked, with over 500 million people now having access to
+            digital financial services.
+          </p>
+          <div class="news-card-footer">
+            <span class="news-source">Financial Inclusion Report</span>
+            <a href="#" class="news-link">Read More</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="cta-row">
+        <a href="#newsletter" class="content-btn">Subscribe to Updates</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Signup -->
+  <section id="newsletter" class="section-5" style="padding-top: 48px">
+    <div class="main-content-container">
+      <div class="content-label">Stay Informed</div>
+      <h2 class="content-title">Get Weekly Updates</h2>
+      <p class="content-description" style="max-width: 600px; margin: 0 auto 32px">
+        Subscribe to our newsletter to receive the latest news, research findings,
+        and success stories in the fight against global poverty.
+      </p>
+      
+      <div class="newsletter-form" data-aos="fade-up">
+        <div class="form-container">
+          <input type="email" placeholder="Enter your email address" class="newsletter-input" />
+          <button class="newsletter-btn">Subscribe</button>
+        </div>
+        <p class="newsletter-disclaimer">
+          We respect your privacy. Unsubscribe at any time.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-section footer-left">
+          <h3 class="footer-title">Uplift</h3>
+          <p class="footer-description">
+            Breaking the cycle of poverty through awareness, education, and
+            action. Together, we can create lasting change in communities
+            worldwide.
+          </p>
+        </div>
+
+        <div class="footer-right">
+          <div class="footer-section">
+            <h4 class="footer-subtitle">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="../index.html" class="footer-link">Home</a></li>
+              <li><a href="./about.html" class="footer-link">About</a></li>
+              <li><a href="./statistics.html" class="footer-link">Statistics</a></li>
+              <li><a href="./news.html" class="footer-link">News</a></li>
+              <li><a href="./advocacy.html" class="footer-link">Advocacy</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4 class="footer-subtitle">Resources</h4>
+            <ul class="footer-links">
+              <li>
+                <a
+                  href="https://blogs.worldbank.org/en/opendata/june-2025-global-poverty-update-from-the-world-bank--2021-ppps-a"
+                  target="_blank"
+                  rel="noopener"
+                  class="footer-link"
+                >
+                  World Bank Poverty Data 2025
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.un.org/sustainabledevelopment/poverty/"
+                  target="_blank"
+                  rel="noopener"
+                  class="footer-link"
+                >
+                  UN Development Goals
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          <p>&copy; 2025 Uplift. Educational content for awareness purposes.</p>
+        </div>
+        <div class="footer-disclaimer">
+          <p>
+            This website is created for educational and awareness purposes.
+            Together, we can make a difference in the fight against poverty.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, duration: 800, easing: "ease-out" });
+  </script>
+
+
+</body>
 </html>
