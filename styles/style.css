@@ -955,6 +955,23 @@ body {
 .stats-list a:hover {
   text-decoration: underline;
 }
+
+.statistics-poverty-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  object-fit: cover;
+}
+
+@media (max-width: 700px) {
+  .statistics-poverty-img {
+    max-width: 98vw;
+    border-radius: 10px;
+  }
+}
 /* ==== End of Statistics Page Styles ==== */
 
 /* ===== End of Section 3 Styles ===== */
@@ -1736,8 +1753,6 @@ body {
   .nav-link.active {
     color: #fff !important;
     font-weight: 400;
-    text-decoration: underline;
-    text-underline-offset: 4px;
   }
   
   /* Show donations button in mobile menu */
