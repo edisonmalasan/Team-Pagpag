@@ -8,7 +8,12 @@
       href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Serif:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="body-black">
     <!-- Navbar -->
@@ -17,13 +22,22 @@
         <div class="nav-logo-container">
           <a href="../index.html" class="nav-logo">Uplift</a>
         </div>
-        <ul class="nav-menu">
-          <li><a href="/index.html" class="nav-link">Home</a></li>
-          <li><a href="#" class="nav-link">About</a></li>
-          <li><a href="./statistics.html" class="nav-link">Statistics</a></li>
-          <li><a href="/pages/news.html" class="nav-link">News</a></li>
-          <li><a href="#" class="nav-link">Advocacy</a></li>
+        
+        <div class="nav-hamburger" id="nav-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="./about.html" class="nav-link">About</a></li>
+          <li><a href="./statistics.html" class="nav-link active">Statistics</a></li>
+          <li><a href="./news.html" class="nav-link">News</a></li>
+          <li><a href="./advocacy.html" class="nav-link">Advocacy</a></li>
+          <li><a href="#" class="nav-btn">Donations</a></li>
         </ul>
+        
         <div>
           <a href="#" class="nav-btn">Donations</a>
         </div>
@@ -32,16 +46,16 @@
 
     <main>
           <section class="main-content-container" style="margin-top: 80px;">
-            <div class="content-label">Global Data</div>
-            <h1 class="content-title">Global Poverty Statistics (2025)</h1>
-            <img src="../assets/images/poverty.jpg" alt="Global Poverty" class="statistics-poverty-img" />
-            <div style="font-size: 0.95em; color: #aaa; margin-top: 8px;">Source: World Bank / UN</div>
-            <p class="content-description">
-              Explore the latest data on poverty around the world. These statistics highlight the regions most affected, the number of people living in extreme poverty, and trends over time. Understanding these numbers helps us target solutions and support where it’s needed most.
+            <div class="content-label" data-aos="fade-up">Global Data</div>
+            <h1 class="content-title" data-aos="fade-up" data-aos-delay="100">Global Poverty Statistics (2025)</h1>
+            <img src="../assets/images/poverty.jpg" alt="Global Poverty" class="statistics-poverty-img" data-aos="fade-up" data-aos-delay="200" />
+            <div style="font-size: 0.95em; color: #aaa; margin-top: 8px;" data-aos="fade-up" data-aos-delay="250">Source: World Bank / UN</div>
+            <p class="content-description" data-aos="fade-up" data-aos-delay="300">
+              Explore the latest data on poverty around the world. These statistics highlight the regions most affected, the number of people living in extreme poverty, and trends over time. Understanding these numbers helps us target solutions and support where it's needed most.
             </p>
           </section>
 
-      <section class="poverty-stats-container">
+      <section class="poverty-stats-container" data-aos="fade-up" data-aos-delay="400">
         <div class="stats-chart">
           <div class="chart-title">Poverty Distribution by Region (2025)</div>
           <div class="chart-bars">
@@ -99,11 +113,11 @@
         </div>
       </section>
 
-      <section class="main-content-container">
+      <section class="main-content-container" data-aos="fade-up" data-aos-delay="500">
         <div class="content-label">Trends & Insights</div>
         <h2 class="content-title">How Poverty Has Changed Over Time</h2>
         <p class="content-description">
-          While global poverty rates have declined over the past decades, progress has slowed in recent years due to economic shocks, conflicts, and climate change. Sub-Saharan Africa remains the most affected region, with nearly half of the world’s extreme poor.
+          While global poverty rates have declined over the past decades, progress has slowed in recent years due to economic shocks, conflicts, and climate change. Sub-Saharan Africa remains the most affected region, with nearly half of the world's extreme poor.
         </p>
         <div class="stats-list">
           <p>
@@ -115,7 +129,7 @@
         </div>
       </section>
 
-      <section class="main-content-container">
+      <section class="main-content-container" data-aos="fade-up" data-aos-delay="600">
         <div class="content-label">Long-Term Trends</div>
         <h2 class="content-title">Decades of Progress and Recent Challenges</h2>
         <div class="stats-list">
@@ -123,9 +137,10 @@
             Since 1990, more than <strong>1 billion people</strong> have been lifted out of extreme poverty worldwide. <br>
             Progress has slowed in recent years, with crises such as the <strong>COVID-19 pandemic</strong>, which pushed an additional <strong>70 million people</strong> into extreme poverty in 2020.
           </p>
+        </div>
       </section>
 
-      <section class="main-content-container">
+      <section class="main-content-container" data-aos="fade-up" data-aos-delay="700">
         <div class="content-label">Sources</div>
         <div class="stats-list">
             <a href="https://blogs.worldbank.org/en/opendata/june-2025-global-poverty-update-from-the-world-bank--2021-ppps-a" target="_blank" rel="noopener">
@@ -187,5 +202,40 @@
         </div>
       </div>
     </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({ once: true, duration: 800, easing: "ease-out" });
+      
+      // Mobile Navigation Hamburger Menu
+      const hamburger = document.getElementById('nav-hamburger');
+      const navMenu = document.getElementById('nav-menu');
+      
+      if (hamburger && navMenu) {
+        hamburger.addEventListener('click', function() {
+          hamburger.classList.toggle('active');
+          navMenu.classList.toggle('active');
+        });
+        
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+          link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+          });
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+          const isClickInsideNav = navMenu.contains(event.target) || hamburger.contains(event.target);
+          
+          if (!isClickInsideNav && navMenu.classList.contains('active')) {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+          }
+        });
+      }
+    </script>
   </body>
 </html>
