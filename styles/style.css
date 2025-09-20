@@ -1346,6 +1346,25 @@ body {
 
 /* ===== News Page Specific Styles ===== */
 
+/* News Hero Section with Newspaper Background */
+.news-hero-section {
+  background-image: linear-gradient(
+      rgba(9, 9, 11, 0.75),
+      rgba(9, 9, 11, 0.85)
+    ),
+    url('../assets/images/newspaper-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+  .news-hero-section {
+    background-attachment: scroll; /* Better performance on mobile */
+  }
+}
+
 /* Featured News Card */
 .featured-news-card {
   background: #0b0b0d;
