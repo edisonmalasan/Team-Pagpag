@@ -1736,6 +1736,8 @@ body {
   .nav-link.active {
     color: #fff !important;
     font-weight: 400;
+    text-decoration: underline;
+    text-underline-offset: 4px;
   }
   
   /* Show donations button in mobile menu */

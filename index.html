@@ -16,31 +16,30 @@
     />
   </head>
   <body class="body-black">
-    <!-- navbar -->
+   <!-- Navbar -->
     <nav class="nav-fixed">
       <div class="nav-container">
         <div class="nav-logo-container">
-          <span class="nav-logo"> Uplift </span>
+          <a href="../index.html" class="nav-logo">Uplift</a>
         </div>
-        <ul class="nav-menu">
-          <li>
-            <a href="#" class="nav-link">Home</a>
-          </li>
-          <li>
-            <a href="./pages/about.html" class="nav-link">About</a>
-          </li>
-          <li>
-            <a href="/pages/statistics.html" class="nav-link">Statistics</a>
-          </li>
-          <li>
-            <a href="/pages/news.html" class="nav-link">News</a>
-          </li>
-          <li>
-            <a href="#" class="nav-link">Advocacy</a>
-          </li>
+        
+        <div class="nav-hamburger" id="nav-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="./about.html" class="nav-link">About</a></li>
+          <li><a href="./statistics.html" class="nav-link active">Statistics</a></li>
+          <li><a href="./news.html" class="nav-link">News</a></li>
+          <li><a href="./advocacy.html" class="nav-link">Advocacy</a></li>
+          <li><a href="#" class="nav-btn">Donations</a></li>
         </ul>
+        
         <div>
-          <a href="#" class="nav-btn"> Donations </a>
+          <a href="#" class="nav-btn">Donations</a>
         </div>
       </div>
     </nav>
@@ -525,7 +524,34 @@
 
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
-      AOS.init({ once: true, duration: 800, easing: "ease-out" });
+      // Mobile Navigation Hamburger Menu
+      const hamburger = document.getElementById('nav-hamburger');
+      const navMenu = document.getElementById('nav-menu');
+      
+      if (hamburger && navMenu) {
+        hamburger.addEventListener('click', function() {
+          hamburger.classList.toggle('active');
+          navMenu.classList.toggle('active');
+        });
+        
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+          link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+          });
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+          const isClickInsideNav = navMenu.contains(event.target) || hamburger.contains(event.target);
+          
+          if (!isClickInsideNav && navMenu.classList.contains('active')) {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+          }
+        });
+      }
     </script>
   </body>
 </html>
